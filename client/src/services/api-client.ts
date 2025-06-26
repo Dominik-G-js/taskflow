@@ -2,7 +2,7 @@ import axios from 'axios';
 import type { Task } from '@/types/Task';
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:3000/api',
+  baseURL: 'https://taskflow-0wxt.onrender.com/api',
 });
 
 export const fetchTasks = async (): Promise<Task[]> => {
